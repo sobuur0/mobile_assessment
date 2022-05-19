@@ -21,12 +21,14 @@ class SignUpTextFormField extends StatelessWidget {
     return TextFormField(
       controller: controller,
       obscureText: obscureText,
+      validator: validator,
       style: const TextStyle(
         color: Colors.blueAccent,
         fontSize: 16.0,
       ),
       keyboardType: textInputType,
       decoration: InputDecoration(
+        contentPadding: const EdgeInsets.all(16.0),
         suffixIcon: suffixIcon,
         fillColor: const Color(0xFFF5F5F5),
         filled: true,
